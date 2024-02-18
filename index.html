@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Ejercicio Formulario Rubén </title>
+	</head>
+	
+	<body bgcolor="#FCD7FD">
+		<center>
+		<div align="center" style="background-color: pink; width:550px; height: 100px;">
+			<fieldset> 
+			<h1 align = "CENTER">FORMULARIO</h1>
+			</fieldset>
+		</div>
+			
+		<div style=" width: 550px">
+		<form action="./practicaPHP.php" method="get">
+		
+			
+			
+			<fieldset> 
+				<legend>Datos Personales</legend>
+				<label for="nombre">Nombre: </label>
+				<input type="text" name="nombre" required>
+				<label for="apellido">Apellido/s: </label>
+				<input type="text" name="apellido" required>
+				<label for="semestre">Semestre: </label>
+				<select name="semestre" required>
+					<option value=" ">--- Sin selección ---</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+				</select>
+				<br />
+				<label for="carrera" required>Carrera: </label>
+				<select name="carrera">
+					<option value=" ">--- Sin selección ---</option>
+					<option value="ing_mecanica">Ingeniería mecánica</option>
+					<option value="ing_informatica">Ingeniería informática</option>
+					<option value="ing_caminos">Ingeniería de caminos</option>
+					<option value="ing_agricola">Ingeniería agrícola</option>
+					<option value="magisterio">Magisterio</option>
+					<option value="ade">Administración y dirección de empresas</option>
+					<option value="periodismo">Periodismo</option>
+					<option value="biologia">Biología</option>
+				</select>
+				<label for="sexo" required>Sexo: </label>
+				<input type="radio" name="sexo" value="Hombre">Hombre</input>
+				<input type="radio" name="sexo" value="Mujer">Mujer</input>
+			</fieldset>
+			<fieldset> 
+				<legend>Fecha Nacimiento</legend>
+				<label for="fecha" required>Fecha: </label> 
+				<input type="date" name="fecha">
+			</fieldset>
+			<fieldset> 
+				<legend>Intereses</legend>
+				<input type="checkbox" name="leer" value="leer">Leer</input>
+				<input type="checkbox" name="cine" value="cine">Cine</input>
+				<input type="checkbox" name="videojuegos" value="videojuegos">Videojuegos</input>
+				<input type="checkbox" name="deporte" value="deporte">Deporte</input>
+				<input type="checkbox" name="moda" value="moda">Moda</input>
+				<input type="checkbox" name="fotografia" value="Fotografía">Fotografía</input>
+			</fieldset>
+			<fieldset> 
+				<legend>Contacto</legend>
+				<label for="correo">Correo: </label>
+				<input type="email" name="correo" required>
+				<label for="password" required>Contraseña: </label>
+				<input type="password" name="password" maxlength="8" size="8">
+			</fieldset>
+			<fieldset> 
+				<legend>Mensaje</legend>
+				<textarea name="mensajeGrande" rows="5" cols="50" placeholder="Mensaje..."></textarea> <br />
+				<label for="foto">Foto: </label>
+				<input type="file" name="foto"> <br /> <br />
+				<button type="submit">Enviar</button>
+				<button type="reset">Restablecer</button>
+				<br>
+			</fieldset>
+			
+		</form>	
+		</center>
+	</body>		
+</html>
